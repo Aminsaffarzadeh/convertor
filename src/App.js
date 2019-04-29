@@ -5,50 +5,7 @@ import './App.css';
 class App extends Component {
 
 
-
-
-  componentDidMount(){
-
-
-    var ulEl=document.querySelector(".ul"),
-        liEls=ulEl.querySelectorAll(".li"),
-        liElsCount=liEls.length,
-        counter=0;
-        liEls[0].style.opacity=1;
-         var timerEl=document.querySelector(".timer");
-    timerEl.classList.add("timerIn");
     
-        
-
-        
-        
-        setInterval(function(){
-            for(var i=0;i<liElsCount;i++){
-            
-            liEls[i].style.opacity=0;
-            
-        } 
-             timerEl.classList.remove("timerIn");
-          counter++;   
-            if(counter==liElsCount){
-            counter=0;
-        }   
-         setTimeout(function(){
-             
-             
-                 liEls[counter].style.opacity=1;   
-              timerEl.classList.add("timerIn");
-             timerEl.style.animationDuration="3s";
-         },100)
-            
-            
-        },4000)
-        
-
-    
-
-
-  }
 
 
   render() {
@@ -101,10 +58,10 @@ class App extends Component {
 
               <div className="timer"></div>
             <ul className="ul">
-                <li className="li1"></li>
-                <li className="li2"></li>
-                <li className="li3"></li>
-                <li className="li4"></li>
+                <li className="li" style={{background:"red"}}></li>
+                <li className="li" style={{background:"blue"}}></li>
+                <li className="li" style={{background:"brown"}}></li>
+                <li className="li" style={{background:"yellow"}}></li>
             </ul>
 
 
@@ -116,6 +73,70 @@ class App extends Component {
       </div>
     );
   }
+
+
+
+  
+
+
+  componentDidMount(){
+
+
+    var ulEl=document.querySelector(".ul"),
+        liEls=ulEl.querySelectorAll(".li"),
+        liElsCount=liEls.length,
+        counter=0;
+        liEls[0].style.opacity=1;
+         var timerEl=document.querySelector(".timer");
+    timerEl.classList.add("timerIn");
+    
+        
+
+        
+        
+        setInterval(function(){
+            for(var i=0;i<liElsCount;i++){
+            
+            liEls[i].style.opacity=0;
+            
+        } 
+             timerEl.classList.remove("timerIn");
+          counter++;   
+            if(counter==liElsCount){
+            counter=0;
+        }   
+         setTimeout(function(){
+             
+             
+                 liEls[counter].style.opacity=1;   
+              timerEl.classList.add("timerIn");
+             timerEl.style.animationDuration="3s";
+         },100)
+            
+            
+        },4000)
+        
+
+        
+
+    
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 export default App;
