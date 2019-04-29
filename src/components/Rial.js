@@ -16,7 +16,7 @@ class Rial extends React.Component {
    render() {
       return (
          <div>
-            <form>
+            <form className="To">To :
             <input type="number" onChange={this.props.onToAmount_r} />
             <select name="currency" onChange={this.props.onToCurrency}>
             {this.state.currencies.map((cur) => (<option key={cur}>{cur}</option>))}

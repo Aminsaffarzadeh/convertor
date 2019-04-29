@@ -97,13 +97,25 @@ class Convertor extends React.Component {
 
 
 
-          <div className="timer"></div>
-        <ul className="ul">
-            <li className="li backtest" ></li>
-            <li className="li backtest2"></li>
-            <li className="li backtest3"></li>
-            <li className="li backtest4"></li>
-        </ul>
+
+         <div className="Tooosh">
+         
+         
+         <div class="toosh2">
+            <div class="circle 1"></div>
+            <div class="circle twoo"></div>
+            <div class="circle three"></div>
+            <div class="circle four"></div>
+
+            <div class="too">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis hic pariatur soluta maxime velit temporibus inventore corrupti, ducimus tenetur vitae nihil nemo debitis cumque mollitia ipsam modi eveniet quod ut magni! Recusandae possimus sit ab, est cumque dolores tempore dignissimos incidunt cum quasi, ipsa totam expedita qui ullam reprehenderit asperiores?</div>
+
+        </div>
+         
+         
+         
+         </div>
+
+
 
 
 
@@ -166,39 +178,7 @@ $(function(){
     //js
 
 
-    var ulEl=document.querySelector(".ul"),
-        liEls=ulEl.querySelectorAll(".li"),
-        liElsCount=liEls.length,
-        counter=0;
-        liEls[0].style.opacity=1;
-         var timerEl=document.querySelector(".timer");
-    timerEl.classList.add("timerIn");
-    
-        
 
-        
-        
-        setInterval(function(){
-            for(var i=0;i<liElsCount;i++){
-            
-            liEls[i].style.opacity=0;
-            
-        } 
-             timerEl.classList.remove("timerIn");
-          counter++;   
-            if(counter==liElsCount){
-            counter=0;
-        }   
-         setTimeout(function(){
-             
-             
-                 liEls[counter].style.opacity=1;   
-              timerEl.classList.add("timerIn");
-             timerEl.style.animationDuration="3s";
-         },100)
-            
-            
-        },4000)
         
 
         

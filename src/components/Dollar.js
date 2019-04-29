@@ -16,7 +16,7 @@ class Dollar extends React.Component {
    render() {
       return (
          <div>
-            <form>To: &nbsp;
+            <form className="To">To: &nbsp;
             <input type="number" onChange={this.props.onToAmount_d} />
             &nbsp;
             <select name="currency" onChange={this.props.onToCurrency}>
