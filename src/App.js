@@ -71,7 +71,7 @@ class App extends Component {
         </form>
     </div>
     <ul className="menu">
-        <li><a href="a">Home</a></li>
+        <li><a href="a">amin</a></li>
         <li><a href="a">About</a></li>
         <div>
         <li><a href="a">Services</a></li>
