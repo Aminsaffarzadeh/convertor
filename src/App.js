@@ -2,54 +2,14 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+
 class App extends Component {
 
 
 
 
-  componentDidMount(){
-
-
-    var ulEl=document.querySelector(".ul"),
-        liEls=ulEl.querySelectorAll(".li"),
-        liElsCount=liEls.length,
-        counter=0;
-        liEls[0].style.opacity=1;
-         var timerEl=document.querySelector(".timer");
-    timerEl.classList.add("timerIn");
-    
-        
-
-        
-        
-        setInterval(function(){
-            for(var i=0;i<liElsCount;i++){
-            
-            liEls[i].style.opacity=0;
-            
-        } 
-             timerEl.classList.remove("timerIn");
-          counter++;   
-            if(counter==liElsCount){
-            counter=0;
-        }   
-         setTimeout(function(){
-             
-             
-                 liEls[counter].style.opacity=1;   
-              timerEl.classList.add("timerIn");
-             timerEl.style.animationDuration="3s";
-         },100)
-            
-            
-        },4000)
-        
-
-    
-
-
-  }
-
+  
 
   render() {
     return (
