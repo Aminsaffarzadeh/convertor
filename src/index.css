@@ -245,7 +245,7 @@ form{
   position: absolute;
   top: 0;
 }
-.li1{
+.li{
   position: absolute;
   color: white;
   top: 0;
@@ -262,7 +262,6 @@ form{
   -webkit-background-size:cover;
   background-size: cover;
   background-color:center center;
-  background-image: url(imgg/1.jpg);
 
 }
 
